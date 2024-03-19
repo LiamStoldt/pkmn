@@ -40,3 +40,13 @@ class Pokemon:
         """Make this pokemon take damage"""
 
         self.hp -= amount
+
+    def add_status_condition(self, condition):
+        """Add a status condition to this pokemon"""
+
+        self.status_condition = condition
+    
+    def remove_status_condition(self):
+        """Remove a statust condition from this pokemon"""
+
+        self.status_condition = None
